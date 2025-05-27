@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   return (
@@ -19,9 +20,12 @@ const Hero: React.FC = () => {
               Voici le Cavalier Légendaire : plus qu'un pion, une déclaration de style.
             </h2>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-amber-500/30">
+              <Link 
+                to="/product" 
+                className="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-amber-500/30 text-center"
+              >
                 Commander maintenant
-              </button>
+              </Link>
               <button className="px-8 py-3 border border-amber-500 text-amber-500 hover:text-amber-600 hover:border-amber-600 font-bold rounded-md transition-all duration-300 bg-transparent dark:bg-transparent hover:bg-amber-500/5">
                 Voir les détails
               </button>
