@@ -42,9 +42,6 @@ const Navbar: React.FC = () => {
             <Link to="/product" className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors">
               Produit
             </Link>
-            <a href="#hero" className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors">
-              Hero
-            </a>
             <a href="#features" className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors">
               Caractéristiques
             </a>
@@ -53,7 +50,7 @@ const Navbar: React.FC = () => {
             </a>
             <div className="flex items-center space-x-4">
               <ThemeToggle />
-              <Link to="/panier" className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors">
+              <Link to="/panier" className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors" onClick={() => window.scrollTo(0, 0)}>
                 <ShoppingCart size={20} />
               </Link>
             </div>
@@ -90,13 +87,6 @@ const Navbar: React.FC = () => {
                 Produit
               </Link>
               <a 
-                href="#hero" 
-                className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Hero
-              </a>
-              <a 
                 href="#features" 
                 className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors"
                 onClick={() => setIsOpen(false)}
@@ -113,7 +103,10 @@ const Navbar: React.FC = () => {
               <Link 
                 to="/panier"
                 className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors flex items-center"
-                onClick={() => setIsOpen(false)}
+                onClick={() => {
+                  setIsOpen(false);
+                  window.scrollTo(0, 0);
+                }}
               >
                 <ShoppingCart size={20} className="mr-2" />
                 Panier

@@ -34,9 +34,9 @@ const Hero: React.FC = () => {
           <div className="lg:w-1/2 relative">
             <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden rounded-xl shadow-2xl transform -rotate-3 transition-all duration-500 hover:rotate-0">
               <img 
-                src="https://images.pexels.com/photos/7095307/pexels-photo-7095307.jpeg" 
+                src="https://raw.githubusercontent.com/StackBlitz/stackblitz-upload-service/main/knight.png" 
                 alt="Cavalier Légendaire" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain bg-gray-100 dark:bg-gray-900"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-black/60 to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6">

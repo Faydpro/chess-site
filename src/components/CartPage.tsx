@@ -15,9 +15,9 @@ const CartPage: React.FC = () => {
             <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm">
               <div className="flex items-center space-x-4">
                 <img
-                  src="https://images.pexels.com/photos/7095307/pexels-photo-7095307.jpeg"
+                  src="https://raw.githubusercontent.com/StackBlitz/stackblitz-upload-service/main/knight.png"
                   alt="Le Cavalier Légendaire"
-                  className="w-24 h-24 object-cover rounded-lg"
+                  className="w-24 h-24 object-contain bg-gray-100 dark:bg-gray-900 rounded-lg"
                 />
                 <div className="flex-1">
                   <h3 className="text-lg font-semibold">Le Cavalier Légendaire</h3>

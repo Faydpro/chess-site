@@ -7,7 +7,7 @@ const ProductPage: React.FC = () => {
   const [openSection, setOpenSection] = useState<string | null>(null);
 
   const images = [
-    "https://images.pexels.com/photos/7095307/pexels-photo-7095307.jpeg",
+    "https://raw.githubusercontent.com/StackBlitz/stackblitz-upload-service/main/knight.png",
     "https://images.pexels.com/photos/6114955/pexels-photo-6114955.jpeg"
   ];
 
@@ -52,7 +52,7 @@ const ProductPage: React.FC = () => {
               <img
                 src={images[selectedImage]}
                 alt="Le Cavalier Légendaire"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             <div className="grid grid-cols-4 gap-4">
