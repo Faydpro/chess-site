@@ -42,11 +42,14 @@ const Navbar: React.FC = () => {
             <Link to="/product" className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors">
               Produit
             </Link>
-            <a href="#about" className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors">
-              À propos
+            <a href="#hero" className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors">
+              Hero
             </a>
             <a href="#features" className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors">
               Caractéristiques
+            </a>
+            <a href="#about" className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors">
+              À propos
             </a>
             <div className="flex items-center space-x-4">
               <ThemeToggle />
@@ -87,11 +90,11 @@ const Navbar: React.FC = () => {
                 Produit
               </Link>
               <a 
-                href="#about" 
+                href="#hero" 
                 className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                À propos
+                Hero
               </a>
               <a 
                 href="#features" 
@@ -99,6 +102,13 @@ const Navbar: React.FC = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Caractéristiques
+              </a>
+              <a 
+                href="#about" 
+                className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                À propos
               </a>
               <Link 
                 to="/panier"
@@ -116,4 +126,4 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default Navbar
+export default Navbar;

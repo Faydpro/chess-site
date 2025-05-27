@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   return (
-    <section className="min-h-screen flex items-center relative overflow-hidden pt-20">
+    <section id="hero" className="min-h-screen flex items-center relative overflow-hidden pt-20">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white dark:to-black opacity-60"></div>
         <div className="h-full w-full bg-white dark:bg-black"></div>
