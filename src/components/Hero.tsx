@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
           <div className="lg:w-1/2 relative">
             <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden rounded-xl shadow-2xl transform -rotate-3 transition-all duration-500 hover:rotate-0">
               <img 
-                src="https://raw.githubusercontent.com/StackBlitz/stackblitz-upload-service/main/knight.png" 
+                src="/cav.png" 
                 alt="Cavalier Légendaire" 
                 className="w-full h-full object-contain bg-gray-100 dark:bg-gray-900"
               />
