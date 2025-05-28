@@ -22,7 +22,7 @@ function App() {
 
   return (
     <Router>
-      <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
+      <div className="min-h-screen bg-white dark:bg-anthracite-950 text-anthracite-900 dark:text-white">
         <Navbar />
         <Routes>
           <Route path="/" element={
@@ -42,5 +42,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
