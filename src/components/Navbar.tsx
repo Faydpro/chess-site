@@ -23,34 +23,34 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-white dark:bg-black shadow-md py-2' 
+        ? 'bg-black shadow-md py-2' 
         : 'bg-transparent py-4'
     }`}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <Link to="/" className="text-xl font-bold text-black dark:text-white">
-              URBAN<span className="text-amber-500">CHESS</span>
+            <Link to="/" className="text-xl font-bold text-white">
+              URBAN<span className="text-gold-500">CHESS</span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors">
+            <Link to="/" className="text-gray-200 hover:text-gold-500 transition-colors">
               Accueil
             </Link>
-            <Link to="/product" className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors">
+            <Link to="/product" className="text-gray-200 hover:text-gold-500 transition-colors">
               Produit
             </Link>
-            <a href="#features" className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors">
+            <a href="#features" className="text-gray-200 hover:text-gold-500 transition-colors">
               Caractéristiques
             </a>
-            <a href="#about" className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors">
+            <a href="#about" className="text-gray-200 hover:text-gold-500 transition-colors">
               À propos
             </a>
             <div className="flex items-center space-x-4">
               <ThemeToggle />
-              <Link to="/panier" className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors" onClick={() => window.scrollTo(0, 0)}>
+              <Link to="/panier" className="text-gray-200 hover:text-gold-500 transition-colors" onClick={() => window.scrollTo(0, 0)}>
                 <ShoppingCart size={20} />
               </Link>
             </div>
@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
             <ThemeToggle />
             <button 
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-800 dark:text-gray-200"
+              className="text-gray-200"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -70,39 +70,39 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-gray-200 dark:border-gray-800">
+          <div className="md:hidden mt-4 py-4 border-t border-gray-800">
             <div className="flex flex-col space-y-4">
               <Link 
                 to="/"
-                className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors"
+                className="text-gray-200 hover:text-gold-500 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Accueil
               </Link>
               <Link 
                 to="/product"
-                className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors"
+                className="text-gray-200 hover:text-gold-500 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Produit
               </Link>
               <a 
                 href="#features" 
-                className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors"
+                className="text-gray-200 hover:text-gold-500 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Caractéristiques
               </a>
               <a 
                 href="#about" 
-                className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors"
+                className="text-gray-200 hover:text-gold-500 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 À propos
               </a>
               <Link 
                 to="/panier"
-                className="text-gray-800 dark:text-gray-200 hover:text-amber-500 dark:hover:text-amber-500 transition-colors flex items-center"
+                className="text-gray-200 hover:text-gold-500 transition-colors flex items-center"
                 onClick={() => {
                   setIsOpen(false);
                   window.scrollTo(0, 0);

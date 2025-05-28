@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
         <div className="max-w-2xl">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Réinvente le jeu. <br />
-            <span className="text-amber-500">Domine l'échiquier.</span>
+            <span className="text-gold-500">Domine l'échiquier.</span>
           </h1>
           <h2 className="text-xl md:text-2xl text-gray-300 mb-8 max-w-xl">
             Voici le Cavalier Légendaire : plus qu'un pion, une déclaration de style.
@@ -67,11 +67,11 @@ const Hero: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link 
               to="/product" 
-              className="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-black font-bold rounded-md transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-amber-500/30 text-center"
+              className="px-8 py-3 bg-gold-500 hover:bg-gold-600 text-black font-bold rounded-md transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-gold-500/30 text-center"
             >
               Commander maintenant
             </Link>
-            <button className="px-8 py-3 border-2 border-amber-500 text-amber-500 hover:text-amber-600 hover:border-amber-600 font-bold rounded-md transition-all duration-300 bg-black/50 backdrop-blur-sm hover:bg-black/60">
+            <button className="px-8 py-3 border-2 border-gold-500 text-gold-500 hover:text-gold-600 hover:border-gold-600 font-bold rounded-md transition-all duration-300 bg-black/50 backdrop-blur-sm hover:bg-black/60">
               Voir les détails
             </button>
           </div>
